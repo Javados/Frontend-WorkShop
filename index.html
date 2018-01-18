@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Start template</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Exo+2:400,800&amp;subset=cyrillic" rel="stylesheet"> 
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// --> 
+      <link rel="shortcut icon" href="img/image.png" type="image/x-icon" />
+      <link href="css/font-awesome.min.css" type="text/css" rel="stylesheet">
+      <link href="css/jquery.bxslider.css" type="text/css" rel="stylesheet" />
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+
+    <!-- preloader start -->
+    <div class="loaderArea">
+      <div class="loader"></div>
+    </div>
+    <!-- preloader end -->
+
+    <!-- header start -->
+    <header>
+    </header>
+    <!-- header end -->
+
+    
+
+    <!-- footer start -->
+    <footer>
+    </footer>
+    <!-- footer end -->
+
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-3.2.1.min"><\/script>')</script>
+   
+     <!-- preloader -->
+    <script> 
+     jQuery(window).on('load', function () {
+       $preloader = jQuery('.loaderArea'),
+       $loader = $preloader.find('.loader');
+       $loader.fadeOut(2000);
+       $preloader.delay(1500).fadeOut('slow');
+     });
+    </script>
+ 
+    <!-- base code -->
+   <script>
+   jQuery(document).ready(function($){
+      
+     jQuery('.bxslider').bxSlider({
+       auto: true,
+       mode: 'fade',
+       pager: false,
+       });
+
+
+     });
+    </script>
+  </body>
+</html>
